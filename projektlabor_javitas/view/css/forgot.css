@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #460142;
+  background-image: url("../img/szines.png");
+  background-repeat: no-repeat;
+  background-position: 3% 65%;
+  
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 1000;
+  text-align: center;
+  line-height: 70px;
+  width: 1400px;
+  color: rgb(253, 222, 137);
+  user-select: none;
+  border-radius: 15px 15px 15px 15px;
+  background:  #401b58;
+  margin-top: -30px;
+}
+.csomag{
+  height: 300px;
+  width: 480px;
+  background: rgb(253, 222, 137);
+  border-radius: 20px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  margin-top: -50px;
+  margin-left: 500px;
+}
+.csomag .title{ 
+    /* felső lila rész*/
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: rgb(253, 222, 137);
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background:  #401b58;
+}
+.csomag form{
+  padding: 10px 30px 50px 30px;
+}
+.csomag form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: 50%;
+}
+.csomag form .field input{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 15px;
+  border: 1px solid rgb(253, 222, 137);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+form .content{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+form .content .checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  background-color: #401b58;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-left: 90px;
+  margin-top: 40px;
+
+}
+
+select{
+  font-size:12px;
+}
+
+

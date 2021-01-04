@@ -1,0 +1,42 @@
+---------
+
+model > usersdb > login(felhazsnálónév,jelszó)
+
+Visszatér a bejelentkezési adatok eredményével, ha nem talált akkor a 'code' értéke 404, ha talál akkor 200.
+Adatok:
+$result[0]['code'] - visszatérési kód
+$result[0]['ID'] - felhasználó ID-ja
+$result[0]['Username'] - felhasználónév
+$result[0]['Password'] - felhasználó jelszava
+$result[0]['Userlvl'] - felhasználó szintje (0 - hallgató , 1 - oktató , 2 - admin)
+
+---------
+
+model > usersdb > register(felhasználónév,jelszó,felhasználó szintje)
+
+A függvény 1-el tér vissza ha a regisztráció sikeres volt, 0-val ha nem.
+
+---------
+
+model > usersdb > delete_user(ID)
+
+Törli a Users táblából az ID-val megegyező felhasználót
+
+---------
+
+model > usersdb > edit_user(ID,felhasználónév,jelszó,felhasználó szintje)
+
+felhasználónév,jelszó,felhasználó szintje megadása nem kötelező, ha ezen adatok valamelyike nem változik null értéket adjunk meg, de ez alapértelmezett is
+
+---------
+model > usersdb > listall()
+
+Visszatér az összes felhasználóval.
+
+$result[0]['ID'] - felhasználó ID-ja
+$result[0]['Username'] - felhasználónév
+$result[0]['Password'] - felhasználó jelszava
+$result[0]['Userlvl'] - felhasználó szintje (0 - hallgató , 1 - oktató , 2 - admin)
+
+---------
+
